@@ -1,0 +1,19 @@
+{"name" : "Lindsay", "hobby" : "running", "avatar" : "http://lindsayelia.com/portfolio/cnit132/images/nyc_vacation2.jpg"}
+
+
+
+$.ajax({
+  url: 'http://www.omdbapi.com/?t=Frozen&y=&plot=short&r=json',
+  method: "GET",
+  success: function(data) {
+      // var statusCode = JSON.stringify(data);
+       var title =     
+
+	   alert(statusCode + " " + httpRequest.status);
+  }
+});
+
+
+thingsObj.Companies.forEach(function(anyVar){ 
+		console.log(anyVar.age)
+	});

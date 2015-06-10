@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+    <div>
+        <button class="btn">I am a button</button>
+        <button class="btn">I am also a button</button>
+    </div>
+    <div id="hello">
+        <ul>
+            <li>blah</li>
+            <li>blah</li>
+            <li>blah</li>
+        </ul>
+
+        <p>
+            <li>Woof!</li>
+            <button>Hi this is button</button>
+        </p>
+    </div>
+
+
+<script type="text/javascript">
+
+// slect all LIs and change their text
+
+var lis = document.querySelectorAll("li");
+document.getElementsByTagName("LI"):
+
+// both of these ^^^ will work
+
+
+var people = [
+	{
+		name: "Colt"
+	},
+	{ 
+		name: "Rosa"
+	},
+	{
+		name: "Lindsay"
+	},
+]
+
+
+people.name = "Jaya"
+// this will not work, the items in the array all share the same name, and we can not set all items in an array by using the element? reference thingy with .name
+// need to iterate through the array instead:
+for(var i = 0; i < people.length; i++){
+	people[i].name = "Jaya";
+}
+
+// properties, such as style, are like "name" getting referenced here in our array
+
+
+var lis = document.querySelectorAll("li");
+for(var i = 0; i < lis.length; i++){
+	lis[i].innerHTML = "dogs rule";
+}
+
+this will loop through ALL the <li></li> on the page and change the inner HTML to "dogs rule"
+
+
+
+
+
+lis.forEach(function(li){
+	li.innerHTML = "cats now rule"
+})
+// this will NOT work because the forEach works on an array
+// and elements are not technically arrays, they are very similar but they are not arrays
+// http://duruk.net/nodelists-and-arrays-in-javascript/
+// this is a node list, which is array-like-but-not-the-same
+// for loops and while loops will work on a node list
+// forEach will not work on a node list
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+Our mapping table with Mongoose
+
+CRUD		NAME			HTTP VERB		MONGOOSE METHOD			URL	ROUTE			PURPOSE
+			index			GET				find					/books				display a list of books
+R			show			GET 			findById				/books/:id 			display a single, particular, book
+			new				GET 			N/A 					/books/new			display a form to create a book
+C			create			POST 			create					/books				takes data from form, makes a new book, 
+																							redirects home
+U			edit			GET				findById				/books/:id/edit		shows data pre-populated in a form, 
+																							lets it be edited
+																							display a form to edit a book
+			update			PUT 			findByIdAndUpdate		/books/:id 			update book with data from edit form
+																							have to find the correct id to update 
+																							the values of that book
+D			destroy			DELETE 			findByIdAndRemove		/books/:id 			look up book by id and delete it																
+
+
+starter & notes:
+mongoose_starter branch has files how Colt started them for us
+
+the files I have in my express_library_app folder is the first copy with my edits & notes from class,
+they are all on the mongoose_starter branch
+
+
+
+completed for reference:
+mongoose_completed branch has the files with the answers
+
+go into mongoose-complete-branch > express_library_app to see the completed branch

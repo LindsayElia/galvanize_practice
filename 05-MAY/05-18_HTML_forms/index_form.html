@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+<head>
+	<title>Lindsay's Gorgeous Form</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<style> 
+		
+		body {
+			font-family: 'Source Sans Pro', sans-serif; 
+			padding: 0;
+			margin: 0;
+			
+		} 
+		
+		div {
+			padding: 10px;
+			background-color: AliceBlue;
+			padding: 50px 0;
+		}
+		
+		.gimmelabel {
+			padding: 0 100px;
+		}
+		
+		#submit {
+			font-size: 5em;
+			font-weight: bold;	/* these are not working :(  */
+			font-color: red;	/* these are not working :(  */
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+<form action="get">
+	
+	<div>
+		<label for="username" class="gimmelabel">Username:</label>
+		<input type="text" name="username" id="username" placeholder="blah">
+	</div>
+	
+	<div>
+		<label for="fullname" class="gimmelabel">Full Name:</label>
+		<input type="text" name="fullname" id="fullname" placeholder="blah">
+	</div>
+	
+	<div>
+		<label for="profile" class="gimmelabel">Profile:</label>
+		<textarea name="profile" id="profile" rows="10" cols="40" placeholder="blah"></textarea>
+	</div>
+	
+	<div>
+		<label for="hobbies" class="gimmelabel">Hobbies:</label>
+		<textarea name="hobbies" id="hobbies" rows="10" cols="40" placeholder="blah"></textarea>
+	</div>
+	
+	<div>
+		<label for="email" class="gimmelabel">Email:</label>
+		<input type="email" name="email" id="email" placeholder="me@me.com">
+	</div>
+	
+	<div>
+		<label for="date" class="gimmelabel">Date:</label>
+		<input type="date" name="date" id="date">
+	</div>
+	
+	<div>
+		<label for="number" class="gimmelabel">Number:</label>
+		<input type="text" name="number" id="number" placeholder="0">
+	</div>
+	
+	<div>
+		<label for="fileupload" class="gimmelabel">File:</label>
+		<input type="file" name="fileupload" id="fileupload">
+	</div>
+	
+	<div>
+		<label for="submit" class="gimmelabel"></label>
+		<input type="submit" name="submit" id="submit" value="submit me!">
+	</div>
+	
+</form>	
+	
+</body>
+</html>

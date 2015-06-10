@@ -1,0 +1,41 @@
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+div{
+	background: green;
+    border: medium groove green;
+}
+
+h1 {
+	font-family: 'Changa One', sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 0px;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}

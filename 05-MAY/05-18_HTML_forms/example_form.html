@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+<head>
+	<title>Lindsay's Gorgeous Form</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<script> 
+		body {
+			font-family: 'Source Sans Pro', sans-serif; 
+		} 
+		
+		// why is this div selector not working?
+		//div {
+		//	padding: 100px 100px;
+		//}
+		
+		.hi {
+			padding: 100px 100px;
+		}
+		
+	</script>
+</head>
+
+<body>
+	
+<form action="get">
+	
+	<div class="hi">
+		<label for="songname">Song Name</label>
+		<input type="text" name="songname" id="songname" placeholder="fav song">
+	</div>
+	
+	<div class="hi">
+		<label for="email">Songwriter Email</label>
+		<input type="email" name="email" id="email" placeholder="me@me.com">
+	</div>
+	
+	<div>
+		<label for="acaawesome">ACA-awesome?</label>
+		<input type="checkbox" value="aca" name="acaawesome" id="acaawesome">
+	</div>
+	
+	<div>
+		<label for="winregionals">Will win regionals?</label>
+		<input type="checkbox" value="regionals" name="winregionals" id="winregionals">
+	</div>
+	
+	<div>
+		<label for="slight">slight diva</label>
+		<input type="radio" value="diva" name="slight" id="slight">
+	</div>
+	
+	<div>
+		<label for="extreme">extreme diva:</label>
+		<input type="radio" value="diva" name="extreme" id="extreme">
+	</div>
+	
+	<div>
+		<label for="comments">Comments</label>
+		<textarea name="comments" id="comments" rows="10" cols="40" placeholder="blah"></textarea>
+	</div>
+	
+	<div>
+		<label for="hide"><i>Super secret hidden field...</i></label>
+		<input type="hidden" name="hide" id="hide">
+	</div>
+	
+	<div>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" placeholder="me@me.com">
+	</div>
+	
+	<div>
+		<label for="date">Date:</label>
+		<input type="date" name="date" id="date">
+	</div>
+	
+	<div>
+		<label for="number">Number:</label>
+		<input type="text" name="number" id="number" placeholder="0">
+	</div>
+	
+	<div>
+		<label for="fileupload">File:</label>
+		<input type="file" name="fileupload" id="fileupload">
+	</div>
+	
+	<div>
+		<label for="submit"></label>
+		<input type="submit" name="submit" id="submit" value="submit me!">
+	</div>
+	
+</form>	
+	
+</body>
+</html>
