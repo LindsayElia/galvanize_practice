@@ -1,0 +1,14 @@
+<h1>Zoos#index</h1>
+
+<% @zoos.each do |zoo| %>
+	<div>
+		<ul>
+			<li>Zoo: <%= zoo.name %></li>
+			<li>Location: <%= zoo.location %></li>
+			<li>Year opened: <%= zoo.year_opened %></li>
+			<li><%= link_to "View all animals at this zoo", zoo_animals_path(zoo) %></li>
+			<li><%= link_to "edit #{zoo.name}", edit_zoo_path(zoo) %></li>
+			<li><%= link_to "destroy #{zoo.name}", zoo_path(zoo), method: :delete, data: {confirm: "Are you sure?"} %></li>
+		</ul>
+	</div>
+<% end %>

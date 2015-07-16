@@ -1,0 +1,20 @@
+<ul>
+<%= form_for @zoo do |form| %>
+	<li>
+		<%= form.label 'Zoo name: ', autofocus: true %>
+		<%= form.text_field :name %>
+	</li>
+	<li>
+		<%= form.label 'Location of zoo: ' %>
+		<%= form.text_field :location %>
+	</li>
+	<li>
+		<%= form.label 'Year this zoo first opened: ' %>
+		<%= form.text_field :year_opened %>
+	</li>
+	<li>
+		<%= form.submit "Create Zoo" %>
+	</li>
+
+<% end %>
+</ul>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZooAssociationsApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- insert flash message controls here -->
+
+<div id="navbar">
+	<ul>
+		<li style="list-style:none;"><%= link_to 'Home', zoos_path %></li>
+		<li style="list-style:none;"><%= link_to 'Add a Zoo', new_zoo_path %></li>
+	</ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- variable name @yoyos taken from yoyos_controller.rb in controllers folder -->
+<!-- <%= @yoyos.inspect %> -->
+
+<h1>Hi this is a header</h1>
+
+<p>Go to <a href="/yoyos/new">new form page</a>.</p>
+<p>Here are all of our yoyos!!!!</p>
+
+<ul>
+<% @yoyos.each do |yoyo| %>
+	<li>
+		<%= yoyo.name %>...
+		<img src="<%= yoyo.url %>" alt="image of <%= yoyo.name %>" height="200" width="200">
+	</li>
+<% end %>
+
+
+</ul>
+

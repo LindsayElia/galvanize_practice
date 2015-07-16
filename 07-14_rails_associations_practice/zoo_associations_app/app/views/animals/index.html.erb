@@ -1,0 +1,18 @@
+<h1>Animals#index</h1>
+
+<ul>
+	<li style="list-style:none;"><%= link_to 'Add an Animal to this zoo', new_zoo_animal_path %></li>
+</ul>
+
+<% @zoo.animals.each do |animal| %>
+	<div>
+		<ul>
+			<li>
+				Name: <%= animal.name %>
+			</li>
+			<li>
+				Species: <%= animal.species %>
+			</li>
+		</ul>
+	</div>
+<% end %>

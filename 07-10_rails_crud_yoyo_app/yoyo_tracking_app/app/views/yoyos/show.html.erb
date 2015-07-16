@@ -1,0 +1,6 @@
+<h1>This is a SHOW page</h1>
+
+<h3><%= @yoyo.name %></h3>
+<img src="<%= @yoyo.url %>" >
+
+<%= link_to 'Destroy', @yoyo, method: :delete, data: { confirm: 'Are you sure?' } %>

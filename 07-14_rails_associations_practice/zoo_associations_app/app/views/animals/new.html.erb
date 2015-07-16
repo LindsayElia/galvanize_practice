@@ -1,0 +1,19 @@
+<h1>Animals#new</h1>
+<p>Find me in app/views/animals/new.html.erb</p>
+
+<ul>
+<!-- is @zoo and @animal here plural or singular? match them up to our controller -->
+<%= form_for [@zoo,@animal] do |form| %>
+	<li>
+		<%= form.label "Animal's name: ", autofocus: true %>
+		<%= form.text_field :name %>
+	</li>
+		<li>
+		<%= form.label "Animal's species: " %>
+		<%= form.text_field :species %>
+	</li>
+	<li>
+		<%= form.submit "Create Animal" %>
+	</li>
+<% end %>
+</ul>

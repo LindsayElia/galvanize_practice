@@ -1,0 +1,34 @@
+<h1>Our first form</h1>
+
+<p>Please add some more yoyos.</p>
+
+<form action="/yoyos" method="POST">
+	<div>
+		<label for="yoyo_name">Yoyo's name: </label>
+		<input type="text" name="yoyo[name]" id="yoyo_name">
+	</div>
+	<div>
+		<label for="yoyo_url">Image link for yoyo: </label>
+		<input type="text" name="url" id="yoyo_url">
+	</div>
+	<div>
+		<input type="submit" value="Add Yoyo">
+	</div>
+</form>
+
+
+<!-- second version of form, with more security stuffs 
+	use this one instead -->
+
+<h1>Our 2nd form</h1>
+
+<p>Please add some more yoyos.</p>
+
+<%= form_for @yoyo do |f| %>
+	<%= f.label "Yoyo's name: " %>
+	<%= f.text_field :name %>
+	<%= f.label "Image link for yoyo: " %>
+	<%= f.text_field :url %>
+	<%= f.submit "Add Yoyo" %>
+<% end %>
+
